@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2x2行列の加算</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>2x2行列の加算</h1>
+
+    <div class="matrix-container">
+      <div>
+        <h2>行列A</h2>
+        <input type="number" id="a11" /> <input type="number" id="a12" /><br />
+        <input type="number" id="a21" /> <input type="number" id="a22" />
+      </div>
+
+      <div>
+        <h2>行列B</h2>
+        <input type="number" id="b11" /> <input type="number" id="b12" /><br />
+        <input type="number" id="b21" /> <input type="number" id="b22" />
+      </div>
+    </div>
+
+    <button id="calcButton">計算する</button>
+
+    <div class="result">
+      <h2>結果</h2>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

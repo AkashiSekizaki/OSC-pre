@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.matrix-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.matrix-container div {
+  text-align: center;
+}
+
+input[type=\"number\"] {
+  width: 50px;
+  margin: 5px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 10px;
+}
