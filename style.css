@@ -1,42 +1,65 @@
+/* ページ全体の基本デザイン */
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  font-family: Arial, sans-serif; /* 文字フォントを指定 */
+  padding: 20px; /* ページ内側の余白 */
 }
 
-h1,
-h2 {
-  text-align: center;
+/* メインタイトルのスタイル */
+h1 {
+  text-align: center; /* 中央寄せ */
+  margin-bottom: 30px; /* タイトルの下に余白を取る */
 }
 
+/* 行列を並べるコンテナのスタイル */
 .matrix-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
+  display: flex; /* 横並びにする */
+  justify-content: space-around; /* 均等配置する */
+  margin-bottom: 20px; /* 下にスペースを取る */
 }
 
+/* 各行列（A、B）を囲むボックスのスタイル */
 .matrix-container div {
-  text-align: center;
+  text-align: center; /* 中央揃え */
 }
 
-input[type=\"number\"] {
-  width: 50px;
-  margin: 5px;
-  text-align: center;
+/* 数字入力用inputのスタイル */
+input[type="number"] {
+  width: 50px; /* 幅を固定 */
+  margin: 5px; /* 周囲に少しスペースを取る */
+  text-align: center; /* 数字を中央に揃える */
+  font-size: 16px; /* フォントサイズを設定 */
 }
 
+/* 「計算する」ボタンのスタイル */
 button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
+  display: block; /* ブロック要素にする（中央寄せしやすい） */
+  margin: 20px auto; /* 中央寄せ＋上下に余白 */
+  padding: 10px 20px; /* 内側の余白 */
+  font-size: 16px; /* 文字の大きさ */
+  cursor: pointer; /* ポインタを手マークにする */
 }
 
+/* 結果エリア全体のスタイル */
 .result {
-  text-align: center;
-  margin-top: 20px;
+  text-align: center; /* 結果も中央に */
+  margin-top: 30px; /* 上にスペースを取る */
 }
 
+/* 結果の数値表示部分 */
 #result {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 20px; /* 文字サイズを大きめに */
+  color: darkgreen; /* 文字色を濃い緑に設定 */
+  margin-top: 10px; /* 結果ブロックの上に余白 */
+}
+
+/* ラジオボタンを並べるエリア */
+.operation-selector {
+  text-align: center; /* 中央寄せ */
+  margin: 20px 0; /* 上下にスペース */
+  font-size: 18px; /* 文字サイズ少し大きめ */
+}
+
+/* ラジオボタンのラベル */
+.operation-selector label {
+  margin: 0 10px; /* ラベル同士に少し間隔 */
 }

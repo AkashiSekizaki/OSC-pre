@@ -2,12 +2,13 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>2x2行列の加算</title>
+    <title>行列計算機（加減算切り替え）</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>2x2行列の加算</h1>
+    <h1>2x2行列計算機</h1>
 
+    <!-- 行列Aの入力部分 -->
     <div class="matrix-container">
       <div>
         <h2>行列A</h2>
@@ -15,6 +16,7 @@
         <input type="number" id="a21" /> <input type="number" id="a22" />
       </div>
 
+      <!-- 行列Bの入力部分 -->
       <div>
         <h2>行列B</h2>
         <input type="number" id="b11" /> <input type="number" id="b12" /><br />
@@ -22,8 +24,21 @@
       </div>
     </div>
 
+    <!-- 足し算引き算を切り替える -->
+    <div class="operation-selector">
+      <label
+        ><input type="radio" name="operation" value="add" checked />
+        足し算</label
+      >
+      <label
+        ><input type="radio" name="operation" value="subtract" /> 引き算</label
+      >
+    </div>
+
+    <!-- 計算のボタン -->
     <button id="calcButton">計算する</button>
 
+    <!-- 結果を表示する部分 -->
     <div class="result">
       <h2>結果</h2>
       <div id="result"></div>
