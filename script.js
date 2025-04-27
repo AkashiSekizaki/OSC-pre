@@ -3,24 +3,24 @@ document.getElementById("calcButton").addEventListener("click", function () {
   // 入力された行列Aを配列にまとめる
   const A = [
     [
-      Number(document.getElementById("a11").value),
-      Number(document.getElementById("a12").value),
+      Number(document.getElementById("a00").value),
+      Number(document.getElementById("a01").value),
     ],
     [
-      Number(document.getElementById("a21").value),
-      Number(document.getElementById("a22").value),
+      Number(document.getElementById("a10").value),
+      Number(document.getElementById("a11").value),
     ],
   ];
 
   // 入力された行列Bを配列にまとめる
   const B = [
     [
-      Number(document.getElementById("b11").value),
-      Number(document.getElementById("b12").value),
+      Number(document.getElementById("b00").value),
+      Number(document.getElementById("b01").value),
     ],
     [
-      Number(document.getElementById("b21").value),
-      Number(document.getElementById("b22").value),
+      Number(document.getElementById("b10").value),
+      Number(document.getElementById("b11").value),
     ],
   ];
 
